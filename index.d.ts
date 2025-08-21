@@ -106,14 +106,14 @@ export declare class LibWrapper {
         package_id: string,
         target: LibWrapperWrapperTarget,
         fn: LibWrapperChainedWrapperFn,
-        type?: LibWrapperChainedWrapperDefinition.type,
+        type?: LibWrapperChainedWrapperDefinition["type"],
         options?: LibWrapperRegisterOptions
     ): number;
     static register(
         package_id: string,
         target: LibWrapperWrapperTarget,
         fn: LibWrapperBaseCallback,
-        type: LibWrapperBareWrapperDefinition.type,
+        type: LibWrapperChainedWrapperDefinition["type"],
         options?: LibWrapperRegisterOptions
     ): number;
     static register(
